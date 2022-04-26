@@ -182,11 +182,11 @@ incrementQuantiSneaker.addEventListener('click', () => {
 
 let cartPro = [];
 function updateCart(node) {
+	let beforeCheckoutButton = document.querySelector('.checkout');
 	if (cartPro.length > 0) {
 		let itemEqual = cartPro.filter(item => {
 			return item.getAttribute('id') == node.getAttribute('id');
 		});
-		console.log(itemEqual);
 		if (itemEqual.length > 0) {
 			itemEqual.map(item => {
 				if (item.getAttribute('id') == node.getAttribute('id')) {
@@ -206,12 +206,16 @@ function updateCart(node) {
 			});
 		} else {
 			cartPro.push(node);
-			contentCart.append(node);
+			// contentCart.append(node);
+			contentCart.insertBefore(node, beforeCheckoutButton);
 		}
 	} else {
 		cartPro.push(node);
-		contentCart.append(node);
+		// contentCart.append(node);
+		contentCart.insertBefore(node, beforeCheckoutButton);
 	}
+	cart.querySelector('.box-cart-i span').innerHTML = cartPro.length;
+	cart.querySelector('.box-cart-i span').classList.add('active');
 }
 let addCart = document.querySelector('.insert-in-cart');
 
@@ -257,3 +261,14 @@ function showCart() {
 	}
 }
 cart.addEventListener('click', showCart);
+
+function clicou(e) {
+	let parent = e.target.parentElement;
+	let parentParent = parent.parentElement;
+	console.log(parentParent);
+}
+
+let checkout = document.querySelector('.checkout');
+checkout.addEventListener('click', () => {
+	console.log(cartPro);
+});

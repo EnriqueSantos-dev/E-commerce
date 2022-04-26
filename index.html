@@ -63,12 +63,9 @@
 						<div class="subtotal">R$ <span></span></div>
 					</div>
 				</div>
-				<div class="delete-item">
+				<div class="delete-item" onclick="clicou(event)">
 					<button><i class="bx bx-trash"></i></button>
 				</div>
-			</div>
-			<div class="checkout">
-				<button>checkout</button>
 			</div>
 		</div>
 		<header>
@@ -102,7 +99,11 @@
 									<span>Cart</span>
 								</div>
 								<!-- model cart  -->
-								<div class="content-cart"></div>
+								<div class="content-cart">
+									<div class="checkout">
+										<button>checkout</button>
+									</div>
+								</div>
 								<div class="cart-empty">
 									<h4>Your car is empty.</h4>
 								</div>

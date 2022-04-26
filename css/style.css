@@ -211,6 +211,7 @@ header {
 }
 .item .delete-item i {
 	font-size: 20px;
+	pointer-events: none;
 }
 .cart-itens .checkout {
 	padding: 15px;
@@ -227,6 +228,7 @@ header {
 	font-weight: 400;
 	text-transform: capitalize;
 	cursor: pointer;
+	outline: none;
 }
 .cart-itens .cart-empty {
 	padding: 60px;
