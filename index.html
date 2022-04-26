@@ -7,45 +7,70 @@
 		<!-- css  -->
 		<link rel="stylesheet" href="/css/style.css" />
 		<!-- js -->
-        <script defer src="/js/jsonSneakers.js"></script>
+		<script defer src="/js/jsonSneakers.js"></script>
 		<script defer src="/js/script.js"></script>
 		<!-- bx icons  -->
 		<link href="https://unpkg.com/boxicons@2.1.2/css/boxicons.min.css" rel="stylesheet" />
 		<title>E-commerce</title>
 	</head>
 	<body>
-        <div class="container-modal">
-            <div class="drop-modal">
-                <div class="modal">
-                    <div class="close-modal">
-                        <i class='bx bx-x'></i>
-                    </div>
-                    <div class="img-big-modal">
-                        <img src="" alt="">
-                        <a id="prev-modal">
-                            <i class="bx bx-chevron-left"></i>
-                        </a>
-                        <a id="next-modal">
-                            <i class="bx bx-chevron-right"></i>
-                        </a>
-                    </div>
-                    <div class="flex small-modal">
-                        <div class="img-small">
-                            <img src="" alt="" />
-                        </div>
-                        <div class="img-small">
-                            <img src="" alt="" />
-                        </div>
-                        <div class="img-small">
-                            <img src="" alt="" />
-                        </div>
-                        <div class="img-small">
-                            <img src="" alt="" />
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
+		<!-- modal -->
+		<div class="container-modal">
+			<div class="drop-modal">
+				<div class="modal">
+					<div class="close-modal">
+						<i class="bx bx-x"></i>
+					</div>
+					<div class="img-big-modal">
+						<img src="" alt="" />
+						<a id="prev-modal" title="preview product">
+							<i class="bx bx-chevron-left"></i>
+						</a>
+						<a id="next-modal" title="next product">
+							<i class="bx bx-chevron-right"></i>
+						</a>
+					</div>
+					<div class="flex small-modal">
+						<div class="img-small">
+							<img src="" alt="" />
+						</div>
+						<div class="img-small">
+							<img src="" alt="" />
+						</div>
+						<div class="img-small">
+							<img src="" alt="" />
+						</div>
+						<div class="img-small">
+							<img src="" alt="" />
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+		<!-- content cart model  -->
+		<div class="model-cart">
+			<div class="flex item">
+				<div class="img-item">
+					<img src="" alt="" />
+				</div>
+				<div class="info-item">
+					<div class="name-item"></div>
+					<div class="flex price">
+						<div class="quanti">
+							<span id="price-item"></span>
+							<span id="quantiSne"></span>
+						</div>
+						<div class="subtotal">R$ <span></span></div>
+					</div>
+				</div>
+				<div class="delete-item">
+					<button><i class="bx bx-trash"></i></button>
+				</div>
+			</div>
+			<div class="checkout">
+				<button>checkout</button>
+			</div>
+		</div>
 		<header>
 			<div class="center-container header">
 				<div class="flex header">
@@ -59,8 +84,8 @@
 									<li class="flex active"><a href="#" data-type="0">collections</a></li>
 									<li class="flex"><a href="#" data-type="1">men</a></li>
 									<li class="flex"><a href="#" data-type="2">woman</a></li>
-									<li class="flex"><a href="#">about</a></li>
-									<li class="flex"><a href="#">contact</a></li>
+									<li class="flex"><a href="index.html">about</a></li>
+									<li class="flex"><a href="index.html">contact</a></li>
 								</ul>
 							</nav>
 						</div>
@@ -69,33 +94,15 @@
 						<div class="cart">
 							<div class="box-cart-i">
 								<i class="bx bx-cart"></i>
-								<span>15</span>
+								<span></span>
 							</div>
 							<!-- cart  -->
 							<div class="cart-itens">
 								<div class="title">
 									<span>Cart</span>
 								</div>
-								<div class="content-cart">
-									<div class="flex item">
-										<div class="img-item">
-											<img src="" alt="" />
-										</div>
-										<div class="info-item">
-											<div class="name-item"></div>
-											<div class="flex price">
-												<div class="quanti"></div>
-												<div class="subtotal"></div>
-											</div>
-										</div>
-										<div class="delete-item">
-											<i class="bx bx-trash"></i>
-										</div>
-									</div>
-									<div class="checkout">
-										<button>checkout</button>
-									</div>
-								</div>
+								<!-- model cart  -->
+								<div class="content-cart"></div>
 								<div class="cart-empty">
 									<h4>Your car is empty.</h4>
 								</div>
@@ -113,28 +120,28 @@
 				<div class="center-container">
 					<div class="flex container-sneakers">
 						<div class="sneaker">
-							<div class="large-img" >
+							<div class="large-img">
 								<img src="" alt="" />
+								<div class="next" title="next product">
+									<i class="bx bx-chevron-right"></i>
+								</div>
+								<div class="prev" title="preview product">
+									<i class="bx bx-chevron-left"></i>
+								</div>
 							</div>
 							<div class="flex small-sneakers">
 								<div class="img-small active">
 									<img data-key="0" src="" alt="" />
 								</div>
 								<div class="img-small">
-									<img data-key="1"  src="" alt="" />
+									<img data-key="1" src="" alt="" />
 								</div>
 								<div class="img-small">
-									<img data-key="2"  src="" alt="" />
+									<img data-key="2" src="" alt="" />
 								</div>
 								<div class="img-small">
-									<img data-key="3"  src="" alt="" />
+									<img data-key="3" src="" alt="" />
 								</div>
-							</div>
-							<div class="next">
-								<i class="bx bx-chevron-right"></i>
-							</div>
-							<div class="prev">
-								<i class="bx bx-chevron-left"></i>
 							</div>
 						</div>
 						<div class="informations-sneaker">
@@ -145,8 +152,7 @@
 								<h2></h2>
 							</div>
 							<div class="descri">
-								<p>
-								</p>
+								<p></p>
 							</div>
 							<div class="price-information-sneaker">
 								<div class="flex actual-price-and-descont">
@@ -160,12 +166,12 @@
 							<div class="flex add-cart">
 								<div class="flex quanti-add">
 									<button id="less">-</button>
-									<div class="quanti-add-cart">0</div>
+									<div class="quanti-add-cart">1</div>
 									<button id="plus">+</button>
 								</div>
 								<div class="flex insert-in-cart">
 									<i class="bx bx-cart"></i>
-									<span>Add to cart</button>
+									<span>Add to cart</span>
 								</div>
 							</div>
 						</div>

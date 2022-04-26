@@ -2,7 +2,7 @@ let listSneakers = [
 	{
 		colletion: [
 			{
-				id: 0,
+				id: 'c0',
 				name: 'sneaker company',
 				imgPrinci: '/images/colletion1-thumb2.jpg',
 
@@ -12,15 +12,14 @@ let listSneakers = [
 					'/images/colletion1-thumb3.jpg',
 					'/images/colletion1-thumb4.jpg',
 				],
-				descri:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
+				descri: 'fall limited edition sneakers ',
 				price: 120,
 				waming: 'Lorem ipsum dolor sit amet consectetur ',
 			},
 			{
-				id: 1,
+				id: 'c1',
 				name: 'Fila Race T2',
-				imgPrinci: '/images/colletion2.webp',
+				imgPrinci: '/images/colletion2-thumb1.webp',
 				urls: [
 					'/images/colletion2-thumb1.webp',
 					'/images/colletion2-thumb2.webp',
@@ -28,7 +27,7 @@ let listSneakers = [
 					'/images/colletion2-thumb4.webp',
 				],
 				descri:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae',
 				price: 330,
 
 				waming: 'Lorem ipsum dolor sit amet consectetur',
@@ -38,7 +37,7 @@ let listSneakers = [
 	{
 		man: [
 			{
-				id: 0,
+				id: 'm0',
 				name: 'asics corrida ',
 				imgPrinci: '/images/masculino1.webp',
 				urls: [
@@ -53,7 +52,7 @@ let listSneakers = [
 				waming: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 			},
 			{
-				id: 1,
+				id: 'm1',
 				name: 'adidas race',
 				imgPrinci: '/images/masculino2.webp',
 				urls: [
@@ -72,7 +71,7 @@ let listSneakers = [
 	{
 		women: [
 			{
-				id: 0,
+				id: 'w0',
 				name: 'asics verde',
 				imgPrinci: '/images/feminino1.webp',
 				urls: [
@@ -87,7 +86,7 @@ let listSneakers = [
 				waming: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 			},
 			{
-				id: 1,
+				id: 'w1',
 				name: 'asics preto',
 				imgPrinci: '/images/feminino2.webp',
 				urls: [
