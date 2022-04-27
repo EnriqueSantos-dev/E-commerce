@@ -215,8 +215,7 @@ function updateCart(node) {
 		// contentCart.append(node);
 		contentCart.insertBefore(node, beforeCheckoutButton);
 	}
-	cart.querySelector('.box-cart-i span').innerHTML = cartPro.length;
-	cart.querySelector('.box-cart-i span').classList.add('active');
+	updateSpanCount();
 }
 let addCart = document.querySelector('.insert-in-cart');
 
@@ -263,16 +262,31 @@ function showCart() {
 }
 cart.addEventListener('click', showCart);
 
-function clicou(e) {
-	let parent = e.target.parentElement;
-	let parentParent = parent.parentElement;
-	console.log(parentParent);
+function deleteItemCart(e) {
+	let parentNode = e.target.parentElement;
+	let idParent = parentNode.parentElement;
+	let arrayItemsCart = contentCart.querySelectorAll('.model-cart');
+	let indexPopCartPro;
+	let indexElemtentList = arrayItemsCart.forEach((item, index) => {
+		item.getAttribute('id') == idParent.getAttribute('id') ? (indexPopCartPro = index) : -1;
+	});
+	contentCart.removeChild(idParent);
+	cartPro.splice(indexPopCartPro, 1);
+	showCart();
+	updateSpanCount();
+}
+function updateSpanCount() {
+	if (cartPro.length > 0) {
+		cart.querySelector('.box-cart-i span').innerHTML = cartPro.length;
+		cart.querySelector('.box-cart-i span').classList.add('active');
+	} else {
+		cart.querySelector('.box-cart-i span').innerHTML = null;
+		cart.querySelector('.box-cart-i span').classList.remove('active');
+	}
 }
 
 let checkout = document.querySelector('.checkout');
-checkout.addEventListener('click', () => {
-	console.log(cartPro);
-});
+checkout.addEventListener('click', () => {});
 
 // menu toggle
 let btnMobile = document.querySelector('.btn-mobile'),
