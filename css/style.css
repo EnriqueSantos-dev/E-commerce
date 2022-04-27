@@ -618,6 +618,7 @@ header {
 	.container-sneakers .sneaker .large-img {
 		max-width: 100vw;
 		border-radius: 0;
+		pointer-events: none;
 	}
 	.container-sneakers .sneaker .large-img img {
 		border-radius: 0;
