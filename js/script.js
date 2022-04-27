@@ -6,6 +6,7 @@ let cart = document.querySelector('.box-cart-i'),
 	closeModal = document.querySelector('.close-modal'),
 	newProduct = document.querySelector('.sneaker .next'),
 	prevProduct = document.querySelector('.sneaker .prev'),
+	menu = document.querySelector('.menu'),
 	menuActive = document.querySelectorAll('.menu nav ul li a'),
 	modal = document.querySelector('.modal');
 
@@ -271,4 +272,17 @@ function clicou(e) {
 let checkout = document.querySelector('.checkout');
 checkout.addEventListener('click', () => {
 	console.log(cartPro);
+});
+
+// menu toggle
+let btnMobile = document.querySelector('.btn-mobile'),
+	closeMenu = document.querySelector('.menu .close-menu');
+
+btnMobile.addEventListener('click', () => {
+	menu.classList.toggle('active');
+	closeMenu.classList.toggle('active');
+});
+closeMenu.addEventListener('click', () => {
+	menu.classList.remove('active');
+	closeMenu.classList.remove('active');
 });

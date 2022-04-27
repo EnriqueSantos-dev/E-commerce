@@ -52,6 +52,52 @@ header {
 .flex.logo-menu {
 	gap: 50px;
 }
+.logo-menu .logo {
+	gap: 10px;
+}
+.logo-menu .logo span {
+	font-size: 28px;
+	font-weight: 700;
+	color: var(--very-vark-blue);
+}
+.logo-menu .logo .btn-mobile {
+	display: none;
+	color: var(--very-vark-blue);
+	font-size: 30px;
+	margin-top: 8px;
+	cursor: pointer;
+}
+.menu.active {
+	position: absolute;
+	left: 0;
+	z-index: 1000;
+	height: 100vh;
+	top: 0;
+	width: 70vw;
+	background-color: var(--white);
+	display: block;
+}
+
+.menu {
+	transition: all 0.3s ease-in-out;
+	animation: animeOpacity 0.3s ease-in-out forwards;
+}
+.menu .close-menu {
+	display: none;
+	font-size: 28px;
+	color: var(--dark-grayish-blue);
+	position: absolute;
+	margin-top: 15px;
+	margin-left: 10px;
+	cursor: pointer;
+	padding: 5px;
+}
+.menu .close-menu i {
+	pointer-events: none;
+}
+.close-menu.active {
+	display: block;
+}
 .logo-menu .menu,
 .menu nav,
 .menu nav ul,
@@ -74,11 +120,7 @@ header {
 	font-size: 15px;
 	color: var(--dark-grayish-blue);
 }
-.logo-menu .logo span {
-	font-size: 28px;
-	font-weight: 700;
-	color: var(--very-vark-blue);
-}
+
 .flex.header .cart-avatar {
 	position: relative;
 }
@@ -526,6 +568,94 @@ header {
 }
 @media (max-width: 940px) {
 	.center-container {
-		max-width: 740px;
+		max-width: 700px;
+		padding: 0 20px 0 20px;
+	}
+	.container-sneakers {
+		flex-direction: column;
+		gap: 40px;
+	}
+}
+
+@media (max-width: 780px) {
+	.menu {
+		display: none;
+	}
+}
+@media (max-width: 500px) and (min-width: 280px) {
+	.logo-menu .logo .btn-mobile {
+		display: block;
+	}
+	.menu nav ul {
+		padding: 0 20px;
+		margin-top: 80px;
+		flex-direction: column;
+		height: auto;
+		align-items: flex-start;
+	}
+	.menu nav ul li {
+		height: auto;
+		display: inline-block;
+		color: var(--very-vark-blue);
+	}
+	.menu nav ul li {
+		margin-bottom: 15px;
+	}
+	.menu nav ul li a {
+		padding-left: 0;
+		color: var(--very-vark-blue);
+		font-weight: bold;
+	}
+	.sneakers {
+		padding-top: 0;
+	}
+	.flex.container-sneakers {
+		padding: 0;
+	}
+	.container-sneakers .sneaker {
+		width: 100vw;
+	}
+	.container-sneakers .sneaker .large-img {
+		max-width: 100vw;
+		border-radius: 0;
+	}
+	.container-sneakers .sneaker .large-img img {
+		border-radius: 0;
+	}
+	.flex.header .cart-avatar {
+		position: static;
+	}
+	.cart .cart-itens.active {
+		width: 90%;
+		top: 100px;
+		z-index: 1;
+		right: 50%;
+		transform: translateX(50%);
+	}
+	.sneaker .flex.small-sneakers {
+		padding: 0 20px;
+		justify-content: space-between;
+		max-width: 100%;
+		margin-top: 20px;
+	}
+	.sneaker .next {
+		top: 50%;
+		right: 20px;
+		transform: translateY(-50%);
+	}
+	.sneaker .prev {
+		top: 50%;
+		left: 20px;
+		transform: translateY(-50%);
+	}
+	.informations-sneaker {
+		padding: 0;
+	}
+	.add-cart {
+		flex-direction: column;
+	}
+	.add-cart .quanti-add,
+	.add-cart .flex.insert-in-cart {
+		width: 100%;
 	}
 }
