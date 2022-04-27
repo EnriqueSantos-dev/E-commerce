@@ -32,6 +32,11 @@ function construtorSneakers(listTypeProduct, indexProduct) {
 	priceInfo.querySelector('#price-actual').innerHTML = `R$ ${listTypeProduct[
 		indexProduct
 	].price.toFixed(2)}`;
+	priceInfo.querySelector('#price-des').innerHTML = `${listTypeProduct[indexProduct].desconto}%`;
+	priceInfo.querySelector('#broken-price span').innerHTML = `R$ ${(
+		(listTypeProduct[indexProduct].price * 100) /
+		(100 - listTypeProduct[indexProduct].desconto)
+	).toFixed(2)}`;
 }
 
 window.addEventListener('load', construtorSneakers(listSneakers[0].colletion, 0));
@@ -85,6 +90,7 @@ function beforeProduct() {
 newProduct.addEventListener('click', nextProduct);
 prevProduct.addEventListener('click', beforeProduct);
 
+// function menu active
 menuActive.forEach(item => {
 	item.addEventListener('click', () => {
 		// voltar a selação da img pequena para o início
@@ -96,6 +102,16 @@ menuActive.forEach(item => {
 		currentIndexProduct = 0;
 		let restartValNewSection = typeProductShow();
 		construtorSneakers(restartValNewSection, currentIndexProduct);
+	});
+});
+
+// function close menu mobile if click in link a menu
+menu.querySelectorAll('li').forEach(item => {
+	item.addEventListener('click', () => {
+		if (document.querySelector('.menu.active') != null) {
+			menu.classList.remove('active');
+			closeMenu.classList.remove('active');
+		}
 	});
 });
 
@@ -162,12 +178,12 @@ prevProductModal.addEventListener('click', () => {
 	document.querySelectorAll('.modal .img-small')[currentIndexImgModal].classList.add('active');
 });
 
-let currentValorSneakerQuanti = 1;
+let currentValorSneakerQuanti = 0;
 const decrementQuantiSneaker = document.getElementById('less'),
 	incrementQuantiSneaker = document.getElementById('plus');
 
 decrementQuantiSneaker.addEventListener('click', () => {
-	if (currentValorSneakerQuanti > 1) {
+	if (currentValorSneakerQuanti > 0) {
 		currentValorSneakerQuanti--;
 		document.querySelector('.quanti-add-cart').innerHTML = currentValorSneakerQuanti;
 	} else {
@@ -221,6 +237,10 @@ let addCart = document.querySelector('.insert-in-cart');
 
 // qundo clicar em add
 addCart.addEventListener('click', () => {
+	if (parseInt(document.querySelector('.quanti-add-cart').textContent) == 0) {
+		return;
+	}
+
 	let cloneCartContent = document.querySelector('.model-cart').cloneNode(true);
 	let productMomentShow = containerSneakers.querySelector('.large-img').getAttribute('id');
 

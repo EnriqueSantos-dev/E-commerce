@@ -12,9 +12,11 @@ let listSneakers = [
 					'/images/colletion1-thumb3.jpg',
 					'/images/colletion1-thumb4.jpg',
 				],
-				descri: 'fall limited edition sneakers ',
-				price: 120,
-				waming: 'Lorem ipsum dolor sit amet consectetur ',
+				descri:
+					'These low-profile sneakers are your perfect casual wear companion. Featuring a durable rubber outer sole, they’ll withstand everything the weather can offer. ',
+				price: 125,
+				waming: ' Fall Limited Edition Sneakers',
+				desconto: 50,
 			},
 			{
 				id: 'c1',
@@ -26,11 +28,11 @@ let listSneakers = [
 					'/images/colletion2-thumb3.webp',
 					'/images/colletion2-thumb4.webp',
 				],
-				descri:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae',
+				descri: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 				price: 330,
 
 				waming: 'Lorem ipsum dolor sit amet consectetur',
+				desconto: 50,
 			},
 		],
 	},
@@ -49,8 +51,8 @@ let listSneakers = [
 				descri:
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
 				price: 250,
-				waming:
-					'Cabedal: Têxtil e Mesh; Entressola: EVA; Solado: Borracha e contra-salto de inspiração tecnológica',
+				waming: 'high peformance',
+				desconto: 28,
 			},
 			{
 				id: 'm1',
@@ -67,6 +69,7 @@ let listSneakers = [
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
 				price: 150,
 				waming: 'Indicado para corridas.',
+				desconto: 50,
 			},
 			{
 				id: 'm2',
@@ -83,6 +86,7 @@ let listSneakers = [
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
 				price: 150,
 				waming: 'Indicado para corridas.',
+				desconto: 10,
 			},
 		],
 	},
@@ -102,6 +106,7 @@ let listSneakers = [
 					' Gel: GEL com base em silicone colocado em locais estratégicos para uma melhor absorção de impacto. AmpliFoam: Espuma de baixa densidade mais resistente que fornece um amortecimento suave.',
 				price: 296.99,
 				waming: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+				desconto: 30,
 			},
 			{
 				id: 'w1',
@@ -117,6 +122,7 @@ let listSneakers = [
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
 				price: 220,
 				waming: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+				desconto: 65,
 			},
 		],
 	},

@@ -188,17 +188,7 @@ header {
 .cart .cart-itens.active {
 	display: block;
 }
-/* seta do card menu  */
-/* .cart .cart-itens::before {
-	content: '';
-	top: -18px;
-	left: 160px;
-	display: block;
-	position: absolute;
-	border: solid 10px;
-	border-color: var(--white) transparent transparent transparent;
-	transform: translateX(-50%) rotate(180deg);
-} */
+
 .cart-itens .title {
 	position: relative;
 	width: 100%;
@@ -411,11 +401,14 @@ header {
 	text-align: center;
 	font-size: 15px;
 }
-.price-information-sneaker .broken-price {
+.price-information-sneaker #broken-price {
 	margin-top: 5px;
 	font-size: 14px;
 	color: var(--grayish-blue);
 	font-weight: bold;
+}
+.price-information-sneaker #broken-price span {
+	text-decoration: line-through;
 }
 .add-cart {
 	gap: 15px;
