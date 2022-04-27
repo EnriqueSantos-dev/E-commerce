@@ -233,6 +233,7 @@ header {
 .item .info-item .name-item {
 	color: var(--dark-grayish-blue);
 	font-size: 13px;
+	text-transform: capitalize;
 }
 .info-item .flex.price {
 	gap: 5px;
@@ -677,5 +678,8 @@ header {
 	}
 	.add-cart .flex.insert-in-cart {
 		padding: 20px;
+	}
+	.item .info-item .name-item {
+		font-size: 15px;
 	}
 }

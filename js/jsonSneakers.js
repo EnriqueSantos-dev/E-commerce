@@ -38,8 +38,8 @@ let listSneakers = [
 		man: [
 			{
 				id: 'm0',
-				name: 'asics corrida ',
-				imgPrinci: '/images/masculino1.webp',
+				name: 'Adidas Coreracer Masculino',
+				imgPrinci: '/images/masculino1-thumb1.webp',
 				urls: [
 					'/images/masculino1-thumb1.webp',
 					'/images/masculino1-thumb2.webp',
@@ -48,23 +48,41 @@ let listSneakers = [
 				],
 				descri:
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
-				price: 200,
-				waming: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+				price: 250,
+				waming:
+					'Cabedal: Têxtil e Mesh; Entressola: EVA; Solado: Borracha e contra-salto de inspiração tecnológica',
 			},
 			{
 				id: 'm1',
-				name: 'adidas race',
-				imgPrinci: '/images/masculino2.webp',
+				name: 'asics gel azul',
+				imgPrinci: '/images/masculino3-thumb1.webp',
+
 				urls: [
-					'/images/masculino2-thumb1.webp',
-					'/images/masculino2-thumb2.webp',
-					'/images/masculino2-thumb3.webp',
-					'/images/masculino2-thumb4.webp',
+					'/images/masculino3-thumb1.webp',
+					'/images/masculino3-thumb2.webp',
+					'/images/masculino3-thumb3.webp',
+					'/images/masculino3-thumb4.webp',
 				],
 				descri:
 					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
-				price: 180,
-				waming: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
+				price: 150,
+				waming: 'Indicado para corridas.',
+			},
+			{
+				id: 'm2',
+				name: 'asics preto',
+				imgPrinci: '/images/masculino4-thumb1.webp',
+
+				urls: [
+					'/images/masculino4-thumb1.webp',
+					'/images/masculino4-thumb2.webp',
+					'/images/masculino4-thumb3.webp',
+					'/images/masculino4-thumb4.webp',
+				],
+				descri:
+					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
+				price: 150,
+				waming: 'Indicado para corridas.',
 			},
 		],
 	},
@@ -72,8 +90,8 @@ let listSneakers = [
 		women: [
 			{
 				id: 'w0',
-				name: 'asics verde',
-				imgPrinci: '/images/feminino1.webp',
+				name: 'Asics Gel Pulse 13',
+				imgPrinci: '/images/feminino1-thumb1.webp',
 				urls: [
 					'/images/feminino1-thumb1.webp',
 					'/images/feminino1-thumb2.webp',
@@ -81,8 +99,8 @@ let listSneakers = [
 					'/images/feminino1-thumb4.webp',
 				],
 				descri:
-					'Lorem ipsum dolor sit amet consectetur adipisicing elit. At repellat, ab nobis recusandae.',
-				price: 130,
+					' Gel: GEL com base em silicone colocado em locais estratégicos para uma melhor absorção de impacto. AmpliFoam: Espuma de baixa densidade mais resistente que fornece um amortecimento suave.',
+				price: 296.99,
 				waming: 'Lorem ipsum dolor sit amet consectetur adipisicing elit.',
 			},
 			{

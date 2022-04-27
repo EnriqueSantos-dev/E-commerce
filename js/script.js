@@ -231,10 +231,10 @@ addCart.addEventListener('click', () => {
 		return item.id == productMomentShow;
 	});
 	cloneCartContent.querySelector('.img-item img').src = infoProductShow[0].imgPrinci;
-	cloneCartContent.querySelector('.name-item').innerHTML = infoProductShow[0].descri;
+	cloneCartContent.querySelector('.name-item').innerHTML = infoProductShow[0].name;
 	cloneCartContent.querySelector(
 		'.quanti #price-item'
-	).innerHTML = `R$ ${infoProductShow[0].price} x `;
+	).innerHTML = `R$ ${infoProductShow[0].price.toFixed(2)} x `;
 
 	cloneCartContent.querySelector('.quanti #quantiSne').innerHTML = `${quanti}`;
 
@@ -250,7 +250,7 @@ addCart.addEventListener('click', () => {
 
 function showCart() {
 	cartItens.classList.toggle('active');
-	if (contentCart.querySelectorAll('.content-cart .model-cart').length > 0) {
+	if (contentCart.querySelectorAll('.content-cart .model-cart').length > 0 || cartPro.length > 0) {
 		document.querySelector('.content-cart .model-cart').classList.add('active');
 		contentCart.classList.add('active');
 		cartItens.querySelector('.cart-empty').classList.remove('active');
