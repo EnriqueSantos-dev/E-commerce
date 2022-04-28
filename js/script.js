@@ -185,6 +185,7 @@ const decrementQuantiSneaker = document.getElementById('less'),
 decrementQuantiSneaker.addEventListener('click', () => {
 	if (currentValorSneakerQuanti > 0) {
 		currentValorSneakerQuanti--;
+		currentValorSneakerQuanti == 0 ? addCart.classList.remove('active') : null;
 		document.querySelector('.quanti-add-cart').innerHTML = currentValorSneakerQuanti;
 	} else {
 		return;
@@ -192,6 +193,9 @@ decrementQuantiSneaker.addEventListener('click', () => {
 });
 incrementQuantiSneaker.addEventListener('click', () => {
 	currentValorSneakerQuanti++;
+	currentValorSneakerQuanti > 0
+		? addCart.classList.add('active')
+		: addCart.classList.remove('active');
 	document.querySelector('.quanti-add-cart').innerHTML = currentValorSneakerQuanti;
 });
 
@@ -240,7 +244,6 @@ addCart.addEventListener('click', () => {
 	if (parseInt(document.querySelector('.quanti-add-cart').textContent) == 0) {
 		return;
 	}
-
 	let cloneCartContent = document.querySelector('.model-cart').cloneNode(true);
 	let productMomentShow = containerSneakers.querySelector('.large-img').getAttribute('id');
 
@@ -287,7 +290,7 @@ function deleteItemCart(e) {
 	let idParent = parentNode.parentElement;
 	let arrayItemsCart = contentCart.querySelectorAll('.model-cart');
 	let indexPopCartPro;
-	let indexElemtentList = arrayItemsCart.forEach((item, index) => {
+	arrayItemsCart.forEach((item, index) => {
 		item.getAttribute('id') == idParent.getAttribute('id') ? (indexPopCartPro = index) : -1;
 	});
 	contentCart.removeChild(idParent);

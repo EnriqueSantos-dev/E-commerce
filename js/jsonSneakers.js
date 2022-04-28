@@ -4,7 +4,7 @@ let listSneakers = [
 			{
 				id: 'c0',
 				name: 'sneaker company',
-				imgPrinci: '/images/colletion1-thumb2.jpg',
+				imgPrinci: '/images/colletion1-thumb1.jpg',
 
 				urls: [
 					'/images/colletion1-thumb1.jpg',
