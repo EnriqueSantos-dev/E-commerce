@@ -16,11 +16,11 @@ A seguir um pequeno preview do projeto:
 
 ## Modal Desktop:
 
-![image](![Captura de tela 2022-05-06 100205](https://user-images.githubusercontent.com/97238331/167140904-55cd457d-f4fd-4d04-b0cc-b8d58d64f04d.png)
+<img src="https://user-images.githubusercontent.com/97238331/167140904-55cd457d-f4fd-4d04-b0cc-b8d58d64f04d.png">
 
 ## Itens no carrinho:
 
-![image](![car](https://user-images.githubusercontent.com/97238331/167140958-66faa4c1-e951-4bf4-81fe-450ad0461009.png)
+<img src="https://user-images.githubusercontent.com/97238331/167140958-66faa4c1-e951-4bf4-81fe-450ad0461009.png">
 
 # Mobile design:
 
