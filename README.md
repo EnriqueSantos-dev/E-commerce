@@ -46,3 +46,4 @@ A seguir um pequeno preview do projeto:
 [<img src="https://github.com/EnriqueSantos-dev/front-end/blob/master/thumbs/desktopthumb.png" width="50%">](https://www.youtube.com/watch?v=sCzGmUQgVqc&ab_channel=EnriqueSantosdeOliveira "No Desktop")
 
 ## Mobile:
+[<img src="https://github.com/EnriqueSantos-dev/front-end/blob/master/thumbs/desktopthumb.png" width="50%">](https://www.youtube.com/watch?v=sCzGmUQgVqc&ab_channel=EnriqueSantosdeOliveira "No Desktop")
