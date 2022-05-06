@@ -43,6 +43,6 @@ A seguir um pequeno preview do projeto:
 
 ### Desktop:
 
-[<img src="https://i.ytimg.com/vi/Hc79sDi3f0U/maxresdefault.jpg" width="50%">](https://www.youtube.com/watch?v=sCzGmUQgVqc&ab_channel=EnriqueSantosdeOliveira "No Desktop")
+[<img src="https://github.com/EnriqueSantos-dev/front-end/blob/master/thumbs/desktopthumb.png" width="50%">](https://www.youtube.com/watch?v=sCzGmUQgVqc&ab_channel=EnriqueSantosdeOliveira "No Desktop")
 
 ## Mobile:
