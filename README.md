@@ -43,7 +43,7 @@ A seguir um pequeno preview do projeto:
 
 ### Desktop:
 
-[<img src="thumbs/desktopthumb.png" width="50%">](https://www.youtube.com/watch?v=sCzGmUQgVqc&ab_channel=EnriqueSantosdeOliveira "Demo desktop")
+[<img src="thumbs/desktopthumb.png" width="70%">](https://www.youtube.com/watch?v=sCzGmUQgVqc&ab_channel=EnriqueSantosdeOliveira "Demo desktop")
 
 ## Mobile:
-[<img src="thumbs/mobilethumb.jpg" width="20%">](https://youtube.com/shorts/Yn6lKbR_jSI "Demo mobile")
+[<img src="thumbs/mobilethumb.jpg" width="250">](https://youtube.com/shorts/Yn6lKbR_jSI "Demo mobile")
